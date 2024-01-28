@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: url(./assets/body-bg.jpg); */
+}
+
+/* Note */
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: #d1000a;
+  }
+}
+.note {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #eff1f2;
+  font-family: "Poppins";
+  border-bottom: 3px solid #a0138e;
+  text-align: center;
+}
+
+.note:hover {
+  background-color: #ffff;
+}
+.note p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.note p span {
+  font-size: 1.2rem;
+}
+.note button {
+  border-radius: 20px;
+  padding: 0px 20px 0px 20px;
+  margin: 10px;
+  color: #a0138e;
+  border-color: #a0138e;
+}
+
+.note button:hover {
+  background-color: #a0138e;
+  color: #ffff;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 233, 230, 1) 24%,
+    rgba(184, 230, 247, 1) 55%,
+    rgba(227, 245, 246, 1) 81%
+  );
+  padding: 15px;
+}
+
+.header nav {
+  display: flex;
+}
+
+.header nav ul {
+  font-size: 1rem;
+  font-family: "Source Serif 4", serif;
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.header nav ul li:hover {
+  color: #d1000a;
+}
+
+.header nav button {
+  background-color: #d1000a;
+  padding: 10px 40px;
+  margin: 0px;
+  color: #eff1f2;
+  border: none;
+  border-radius: 30px;
+  margin-left: 2rem;
+}
+
+.header nav button:hover {
+  background-color: black;
+}
+
+/* Middle */
+
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffff;
+  position: relative;
+
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.middle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(191, 191, 191);
+  background: linear-gradient(
+    158deg,
+    rgba(191, 191, 191, 1) 39%,
+    rgba(227, 245, 246, 0) 100%
+  );
+}
+
+.middle h1 {
+  margin-top: 0;
+  font-weight: 100;
+  font-family: "Poppins";
+  z-index: 2;
+  font-size: 2.5rem;
+}
+
+.middle p {
+  text-align: center;
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 0;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+
+.middle .learn {
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  & button {
+    opacity: 2;
+    border-radius: 30px;
+    border: none;
+    background: #ffff;
+    color: black;
+    padding: 15px 30px;
+    font-family: "Source Serif 4", serif;
+
+    &:hover {
+      background: #d1000a;
+      color: #ffff;
+    }
+  }
+}
+
+/* Feature */
+
+.feature {
+  background: rgb(183, 28, 93);
+  background: linear-gradient(
+    93deg,
+    rgba(183, 28, 93, 1) 8%,
+    rgba(186, 136, 223, 1) 29%,
+    rgba(91, 98, 212, 1) 57%,
+    rgba(180, 159, 251, 1) 81%
+  );
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  & .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    color: #ffff;
+
+    & p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      color: black;
+      background-color: #ffff;
+    }
+  }
+}
+
+/* Service */
+
+.service {
+  display: flex;
+  flex-direction: column;
+  background: url(./assets/bg2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .header {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background: none;
+    margin: 50px;
+
+    & p {
+      display: flex;
+      justify-content: center;
+      color: #d1000a;
+    }
+
+    & h1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      font-size: 2.1rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.service .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content .left,
+.right,
+.mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Source Serif 4", serif;
+  user-select: none;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact .left {
+  width: 100%;
+  margin: 3vw 0 0 9vw;
+}
+
+.contact .left h4 {
+  font-family: sans-serif;
+  color: #d1000a;
+  font-weight: lighter;
+}
+
+.contact .left h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  width: 50%;
+}
+
+.contact .left h3,
+p {
+  font-family: "Source Serif 4", serif;
+}
+
+.contact .left .social {
+  margin-top: 50px;
+}
+
+.contact .right {
+  margin: 20px;
+  text-align: left;
+}
+
+.contact .form {
+  gap: 1rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input {
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid;
+  outline: none;
+}
+
+.contact input:focus,
+select:focus {
+  border-bottom: 1px solid #d1000a;
+}
+
+.contact .down #message {
+  height: 50px;
+}
+
+.contact button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #d1000a;
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+
+.contact button:hover {
+  background-color: black;
+}
+
+/* Map */
+
+.map-wrap {
+  margin-top: 40px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: url(./assets/bg2.webp);
+  text-decoration: underline;
+}
+
+/* Recruit, About, Find-Opportunities */
+
+.recruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./assets/bg-3.webp);
+  background-size: cover;
+  height: 120vh;
+  text-align: center;
+}
+
+.recruit .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins";
+  color: #ffff;
+}
+
+.recruit .head h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.recruit .head p {
+  font-size: 1.2rem;
+}
+
+.recruit .search {
+  display: flex;
+  gap: 1rem;
+}
+
+.recruit .search input {
+  width: 25vw;
+  padding: 10px 20px;
+  background: #e5e9ea;
+  border: none;
+
+  &::placeholder {
+    color: black;
+  }
+
+  &select:focus {
+    border: none;
+  }
+}
+
+.recruit .search button {
+  background: #d1000a;
+  color: #ffff;
+  border: none;
+  padding: 10px 30px;
+
+  &:hover {
+    background: #ffff;
+    color: black;
+  }
+}
+
+.recruit .link {
+  display: flex;
+  color: #ffff;
+  margin-top: 20vw;
+  gap: 0.5rem;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(./assets/bg2.webp);
+
+  & .top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+      font-size: 3.2rem;
+      font-family: "Ubuntu";
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    & p {
+      margin-top: 30px;
+      font-family: sans-serif;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+
+    & h4 {
+      width: 40vw;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.5rem;
+      font-family: "Source Serif 4", serif;
+    }
+
+    & img {
+      width: 90%;
+      height: 50%;
+    }
+  }
+
+  & .bottom {
+    background-image: url(./assets/bg2.webp);
+    width: 100%;
+
+    & .story {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      & h1 {
+        font-size: 2.5rem;
+        font-family: "Poppins";
+        font-weight: 300;
+        margin: 50px 0 20px 0;
+
+        position: relative;
+        padding-bottom: 0;
+      }
+
+      & h6 {
+        text-align: center;
+        font-weight: 300;
+        width: 50%;
+        font-size: 1rem;
+        font-family: "Source Serif 4", serif;
+      }
+    }
+  }
+}
+
+/* Sidebar */
+
+.sidebar {
+  z-index: 5;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  & a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+
+  & .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 0px;
+}
+
+.openbtn {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.sidebar-open {
+  z-index: 5;
+  width: 250px;
+
+  .openbtn {
+    display: none;
+  }
+}
+
+.sidebar-close {
+  width: 0;
+}
+
+/* Media Query */
+
+@media (max-width: 750px) {
+  .openbtn {
+    display: block;
+  }
+
+  .sidebar {
+    padding-top: 10px;
+  }
+
+  .sidebar-open {
+    width: 100%;
+
+    & .openbtn {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header nav ul {
+    border: 1px solid;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .left {
+      width: auto;
+    }
+
+    & .right {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .feature {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    & .container {
+      margin: 10px;
+    }
+  }
+  .service {
+    & .header {
+      text-align: center;
+    }
+
+    & .content {
+      margin: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+
+  .contact {
+    & .form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .about {
+    & .top {
+      & h4 {
+        width: 90%;
+      }
+    }
+
+    & .bottom {
+      & .story {
+        & h6 {
+          width: 90%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
