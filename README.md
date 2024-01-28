@@ -1,4 +1,4 @@
-# ASpire Access Website Clone
+# Aspire Access Website Clone
 
 ## Live demo : https://aspire-access-clone-aamirindi.netlify.app 
 
